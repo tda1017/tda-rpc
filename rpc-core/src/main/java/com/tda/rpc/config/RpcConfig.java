@@ -16,7 +16,7 @@ public class RpcConfig {
     /**
      * 版本号
      */
-    private String version = "1.1";
+    private String version = "1.4";
 
     /**
      * 服务器主机名
@@ -28,4 +28,8 @@ public class RpcConfig {
      */
     private Integer serverPort = 8080;
 
+    /**
+     * 模拟调用
+     */
+    private boolean mock = false;
 }

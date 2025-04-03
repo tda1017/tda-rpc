@@ -1,0 +1,8 @@
+
+L	java:S106"+Replace this use of System.out by a logger.(õÃß×ıÿÿÿÿ8°ä…ß2
+G	java:S106"+Replace this use of System.out by a logger.(“ş¶÷8°ä…ß2
+]	java:S125"<This block of commented-out lines of code should be removed.(ê„ã°ÿÿÿÿÿ8¼®å…ß2
+[
+java:S1128"9Remove this unused import 'com.tda.rpc.config.RpcConfig'.(Ø¼¹·şÿÿÿÿ8Á®å…ß2
+\
+java:S1128":Remove this unused import 'com.tda.rpc.utils.ConfigUtils'.(¡–„²üÿÿÿÿ8Â®å…ß2

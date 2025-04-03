@@ -8,10 +8,30 @@
   <url>http://maven.apache.org</url>
 
   <properties>
-    <java.version>11</java.version>
+    <maven.compiler.source>11</maven.compiler.source>
+    <maven.compiler.target>11</maven.compiler.target>
   </properties>
 
   <dependencies>
+    <!-- 序列化 -->
+    <!-- https://mvnrepository.com/artifact/com.caucho/hessian -->
+    <dependency>
+      <groupId>com.caucho</groupId>
+      <artifactId>hessian</artifactId>
+      <version>4.0.66</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/com.esotericsoftware/kryo -->
+    <dependency>
+      <groupId>com.esotericsoftware</groupId>
+      <artifactId>kryo</artifactId>
+      <version>5.6.0</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-databind</artifactId>
+      <version>2.17.2</version>
+    </dependency>
     <!-- https://mvnrepository.com/artifact/ch.qos.logback/logback-classic -->
     <dependency>
       <groupId>ch.qos.logback</groupId>
