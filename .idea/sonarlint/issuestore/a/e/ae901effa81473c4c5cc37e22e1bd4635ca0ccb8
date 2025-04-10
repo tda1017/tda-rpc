@@ -1,0 +1,7 @@
+
+b	java:S112W"FDefine and throw a dedicated exception instead of using a generic one.(­Ô„¢8©«ïÔß2
+]
+java:S1075""ARefactor your code to get this URI from a customizable parameter.(ö“ìk8ªÌîÔß2
+{
+java:S2142V"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(”ı¾8´ÌîÔß2
+L	java:S106]"+Replace this use of System.out by a logger.(õÉ¹ãıÿÿÿÿ8ĞèñÔß2

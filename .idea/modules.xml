@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/rpc-core/rpc-core.iml" filepath="$PROJECT_DIR$/rpc-core/rpc-core.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/tda-rpc.iml" filepath="$PROJECT_DIR$/.idea/tda-rpc.iml" />
     </modules>
   </component>
