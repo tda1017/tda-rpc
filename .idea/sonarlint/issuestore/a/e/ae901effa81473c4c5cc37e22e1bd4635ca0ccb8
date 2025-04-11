@@ -1,7 +1,21 @@
 
-b	java:S112W"FDefine and throw a dedicated exception instead of using a generic one.(­Ô„¢8©«ïÔß2
+b	java:S112f"FDefine and throw a dedicated exception instead of using a generic one.(­Ô„¢8§¤¡€â2
 ]
-java:S1075""ARefactor your code to get this URI from a customizable parameter.(ö“ìk8ªÌîÔß2
+java:S1075%"ARefactor your code to get this URI from a customizable parameter.(ö“ìk8Ç¤¡€â2
+]	java:S125K"<This block of commented-out lines of code should be removed.(å†··üÿÿÿÿ8Ýü©€â2
 {
-java:S2142V"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(”ý¾8´ÌîÔß2
-L	java:S106]"+Replace this use of System.out by a logger.(õÉ¹ãýÿÿÿÿ8ÐèñÔß2
+java:S2142e"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(”ý¾8Û¤¡€â2
+L	java:S106l"+Replace this use of System.out by a logger.(õÉ¹ãýÿÿÿÿ8á¤¡€â2
+a
+java:S1128"?Remove this unused import 'com.google.common.primitives.Bytes'.(ßãŒ¥þÿÿÿÿ8ã¤¡€â2
+V
+java:S1128"9Remove this unused import 'io.etcd.jetcd.kv.GetResponse'.(Íáö8ã¤¡€â2
+[
+java:S1128	"9Remove this unused import 'io.etcd.jetcd.kv.PutResponse'.(Þä’¥ûÿÿÿÿ8ã¤¡€â2
+M
+java:S1128
+"0Remove this unused import 'io.etcd.jetcd.op.Op'.(à˜Ö›8ä¤¡€â2
+`
+java:S1128"CRemove this unused import 'java.util.concurrent.CompletableFuture'.(ôÞä´8ä¤¡€â2
+a
+java:S1128"DRemove this unused import 'java.util.concurrent.ExecutionException'.(¡£ØÍ8ä¤¡€â2

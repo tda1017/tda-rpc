@@ -59,3 +59,6 @@ m
 =rpc-core/src/main/java/com/tda/rpc/model/ServiceMetaInfo.java,1\e\1e24fbb5141146eb5a507044ce1a1d62f6eee913
 n
 >rpc-core/src/test/java/com/rpc/registry/test/RegistryTest.java,6\9\697bef2ed9e62d40a0a50f42483fb70f72256bf2
+:
+
+.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302

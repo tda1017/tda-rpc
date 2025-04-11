@@ -34,6 +34,11 @@ public interface Registry {
     void unRegister(ServiceMetaInfo serviceMetaInfo);
 
     /**
+     * 心跳检测（服务端）
+     */
+    void heartBeat();
+
+    /**
      * 服务发现（获取某服务的所有节点，消费端）
      *
      * @param serviceKey 服务键名
