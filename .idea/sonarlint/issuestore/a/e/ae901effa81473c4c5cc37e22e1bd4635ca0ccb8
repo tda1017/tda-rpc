@@ -1,21 +1,30 @@
 
-b	java:S112f"FDefine and throw a dedicated exception instead of using a generic one.(­Ô„¢8§¤¡€â2
+h	java:S112€"FDefine and throw a dedicated exception instead of using a generic one.(‰¡æşÿÿÿÿ8ÚåĞÆã2
+c	java:S112¤"FDefine and throw a dedicated exception instead of using a generic one.(­Ô„¢8ÛåĞÆã2
+c	java:S112´"FDefine and throw a dedicated exception instead of using a generic one.(ŒöÓ8ÛåĞÆã2
+J
+java:S1604m"(Make this anonymous inner class a lambda(œ¥Ô½ùÿÿÿÿ8İåĞÆã2
 ]
-java:S1075%"ARefactor your code to get this URI from a customizable parameter.(ö“ìk8Ç¤¡€â2
-]	java:S125K"<This block of commented-out lines of code should be removed.(å†··üÿÿÿÿ8İü©€â2
+java:S1075("ARefactor your code to get this URI from a customizable parameter.(ö“ìk8’æĞÆã2
+]	java:S125`"<This block of commented-out lines of code should be removed.(å†··üÿÿÿÿ8œæĞÆã2
 {
-java:S2142e"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(”ı¾8Û¤¡€â2
-L	java:S106l"+Replace this use of System.out by a logger.(õÉ¹ãıÿÿÿÿ8á¤¡€â2
+java:S2142"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(”ı¾8 æĞÆã2
+|
+java:S2142£"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(”ı¾8¤æĞÆã2
+M	java:S106­"+Replace this use of System.out by a logger.(õÉ¹ãıÿÿÿÿ8§æĞÆã2
+|
+java:S2142³"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(”ı¾8¨æĞÆã2
 a
-java:S1128"?Remove this unused import 'com.google.common.primitives.Bytes'.(ßãŒ¥şÿÿÿÿ8ã¤¡€â2
+java:S1128"?Remove this unused import 'com.google.common.primitives.Bytes'.(ßãŒ¥şÿÿÿÿ8¢ÑÆã2
 V
-java:S1128"9Remove this unused import 'io.etcd.jetcd.kv.GetResponse'.(Íáö8ã¤¡€â2
+java:S1128"9Remove this unused import 'io.etcd.jetcd.kv.GetResponse'.(Íáö8£ÑÆã2
 [
-java:S1128	"9Remove this unused import 'io.etcd.jetcd.kv.PutResponse'.(Şä’¥ûÿÿÿÿ8ã¤¡€â2
+java:S1128"9Remove this unused import 'io.etcd.jetcd.kv.PutResponse'.(Şä’¥ûÿÿÿÿ8£ÑÆã2
 M
-java:S1128
-"0Remove this unused import 'io.etcd.jetcd.op.Op'.(à˜Ö›8ä¤¡€â2
+java:S1128"0Remove this unused import 'io.etcd.jetcd.op.Op'.(à˜Ö›8£ÑÆã2
 `
-java:S1128"CRemove this unused import 'java.util.concurrent.CompletableFuture'.(ôŞä´8ä¤¡€â2
+java:S1128"CRemove this unused import 'java.util.concurrent.CompletableFuture'.(ôŞä´8£ÑÆã2
 a
-java:S1128"DRemove this unused import 'java.util.concurrent.ExecutionException'.(¡£ØÍ8ä¤¡€â2
+java:S1128"DRemove this unused import 'java.util.concurrent.ExecutionException'.(¡£ØÍ8£ÑÆã2
+U
+java:S10682"8Remove this unused "registryServiceCache" private field.(Â¡®Æ8ªæĞÆã2

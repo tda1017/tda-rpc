@@ -49,6 +49,10 @@ public class EtcdRegistry implements Registry {
      */
     private final RegistryServiceCache registryServiceCache = new RegistryServiceCache();
 
+    /**
+     * 初始化注册中心
+     * @param registryConfig
+     */
     @Override
     public void init(RegistryConfig registryConfig) {
         client = Client.builder()
@@ -59,6 +63,11 @@ public class EtcdRegistry implements Registry {
         heartBeat();
     }
 
+    /**
+     * 服务注册
+     * @param serviceMetaInfo
+     * @throws Exception
+     */
     @Override
     public void register(ServiceMetaInfo serviceMetaInfo) throws Exception {
         Lease leaseClient = client.getLeaseClient();
@@ -91,6 +100,7 @@ public class EtcdRegistry implements Registry {
         // 从本地缓存移除
         localRegisterNodeKeySet.remove(registerKey);
     }
+
 
     @Override
     public void heartBeat() {
@@ -127,6 +137,11 @@ public class EtcdRegistry implements Registry {
     }
 
 
+    /**
+     *
+     * @param serviceKey 服务键名
+     * @return
+     */
     @Override
     public List<ServiceMetaInfo> serviceDiscovery(String serviceKey) {
         String searchPrefix = ETCD_ROOT_PATH + serviceKey + "/";
@@ -150,6 +165,9 @@ public class EtcdRegistry implements Registry {
         }
     }
 
+    /**
+     * 销毁服务
+     */
     @Override
     public void destroy() {
         System.out.println("当前节点下线");
