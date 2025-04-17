@@ -1,0 +1,8 @@
+
+p
+java:S1104"NMake NO a static final constant or non-public and provide accessors if needed.(Â•ä¶üÿÿÿÿ8Á¹éðã2
+J
+java:S1444"(Make this "public static NO" field final(Â•ä¶üÿÿÿÿ8‘èéðã2
+z	java:S116"YRename this field "FIXED_INTERVAL" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(À¢Éƒýÿÿÿÿ8´—Þðã2
+o
+java:S3008"MRename this field "NO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Â•ä¶üÿÿÿÿ8“èéðã2

@@ -1,5 +1,6 @@
 package com.tda.rpc.config;
 
+import com.tda.rpc.fault.retry.RetryStrategyKeys;
 import com.tda.rpc.loadbalancer.LoadBalancerKeys;
 import lombok.Data;
 
@@ -43,4 +44,9 @@ public class RpcConfig {
      * 负载均衡器
      */
     private String loadBalancer = LoadBalancerKeys.ROUND_ROBIN;
+
+    /**
+     * 重试策略
+     */
+    private String retryStrategy = RetryStrategyKeys.NO;
 }

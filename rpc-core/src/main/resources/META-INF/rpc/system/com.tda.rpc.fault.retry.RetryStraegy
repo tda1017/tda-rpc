@@ -1,0 +1,2 @@
+no=com.tda.rpc.fault.retry.NoRetryStrategy
+fixedInterval=com.tda.rpc.fault.retry.FixedIntervalRetryStrategy
