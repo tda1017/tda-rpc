@@ -1,6 +1,7 @@
 package com.tda.rpc.config;
 
 import com.tda.rpc.fault.retry.RetryStrategyKeys;
+import com.tda.rpc.fault.tolerant.TolerantStrategyKeys;
 import com.tda.rpc.loadbalancer.LoadBalancerKeys;
 import lombok.Data;
 
@@ -49,4 +50,10 @@ public class RpcConfig {
      * 重试策略
      */
     private String retryStrategy = RetryStrategyKeys.NO;
+
+    /**
+     * 容错策略
+     */
+    //todo 为什么需要public static 上面的不用
+    private String tolerantStrategy = TolerantStrategyKeys.FAIL_FAST;
 }
