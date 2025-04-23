@@ -65,14 +65,14 @@ public class ServiceProxy implements InvocationHandler {
 
             // 负载均衡
             LoadBalancer loadBalancer = LoadBalancerFactory.getInstance(rpcConfig.getLoadBalancer());
+
             // 将调用方法名（请求路径）作为负载均衡参数
             Map<String, Object> requestParams = new HashMap<>();
             requestParams.put("method", method.getName());
             ServiceMetaInfo selectedServiceMetaInfo = loadBalancer.select(requestParams, serviceMetaInfoList);
 
             // 发送请求
-            // todo 这里地址被硬编码了（使用注册中心和服务发现机制解决）
-            try (HttpResponse httpResponse = HttpRequest.post("http://localhost:8080")
+            try (HttpResponse httpResponse = HttpRequest.post(selectedServiceMetaInfo.getServiceAddress())
                     .body(bodyBytes)
                     .execute()) {
                 byte[] result = httpResponse.bodyBytes();

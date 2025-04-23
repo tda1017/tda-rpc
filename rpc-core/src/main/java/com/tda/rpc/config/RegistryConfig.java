@@ -22,7 +22,7 @@ public class RegistryConfig {
     /**
      * 注册中心地址
      */
-    private String address = "http://8.134.210.147:2380";
+    private String address = "http://47.238.150.3:2379";
 
     /**
      * 用户名
