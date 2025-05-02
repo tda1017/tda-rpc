@@ -1,7 +1,7 @@
 package com.tda.rpc.serializer;
 
 public class SerializerKeys {
-    static String JDK = "jdk";
-    static String JSON = "json";
-    static String KRYO = "kryo";
+    public static String JDK = "jdk";
+    public static String JSON = "json";
+    public static String KRYO = "kryo";
 }

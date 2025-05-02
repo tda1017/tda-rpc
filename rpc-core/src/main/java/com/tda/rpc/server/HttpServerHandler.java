@@ -1,18 +1,18 @@
 package com.tda.rpc.server;
 
-import java.io.IOException;
-import java.lang.reflect.Method;
-
+import com.tda.rpc.RpcApplication;
+import com.tda.rpc.model.RpcRequest;
+import com.tda.rpc.model.RpcResponse;
+import com.tda.rpc.registry.LocalRegistry;
+import com.tda.rpc.serializer.Serializer;
+import com.tda.rpc.serializer.SerializerFactory;
 import io.vertx.core.Handler;
 import io.vertx.core.buffer.Buffer;
 import io.vertx.core.http.HttpServerRequest;
 import io.vertx.core.http.HttpServerResponse;
 
-import com.tda.rpc.model.RpcRequest;
-import com.tda.rpc.model.RpcResponse;
-import com.tda.rpc.registry.LocalRegistry;
-import com.tda.rpc.serializer.JdkSerializer;
-import com.tda.rpc.serializer.Serializer;
+import java.io.IOException;
+import java.lang.reflect.Method;
 /**
  * HTTP 请求处理
  *
@@ -26,7 +26,8 @@ public class HttpServerHandler implements Handler<HttpServerRequest> {
     @Override
     public void handle(HttpServerRequest request) {
         // 指定序列化器
-        final Serializer serializer = new JdkSerializer();
+//        final Serializer serializer = new JdkSerializer();
+        final Serializer serializer = SerializerFactory.getInstance(RpcApplication.getRpcConfig().getSerializer());
 
         // 记录日志
         System.out.println("Received request: " + request.method() + " " + request.uri());

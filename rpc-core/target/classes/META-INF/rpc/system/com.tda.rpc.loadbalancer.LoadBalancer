@@ -1,0 +1,3 @@
+roundRobin=com.tda.rpc.loadbalancer.RoundRobinLoadBalancer
+random=com.tda.rpc.loadbalancer.RandomLoadBalancer
+consistentHash=com.tda.rpc.loadbalancer.ConsistentHashLoadBalancer

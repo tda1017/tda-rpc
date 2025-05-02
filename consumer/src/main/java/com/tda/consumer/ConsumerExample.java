@@ -2,11 +2,15 @@ package com.tda.consumer;
 
 import com.tda.common.model.User;
 import com.tda.common.service.UserService;
+import com.tda.rpc.bootstrap.ConsumerBootstrap;
 import com.tda.rpc.proxy.ServiceProxyFactory;
 
 public class ConsumerExample {
 
     public static void main(String[] args) {
+        // 服务提供者初始化
+        ConsumerBootstrap.init();
+        
         // 获取代理
         UserService userService = ServiceProxyFactory.getProxy(UserService.class);
         User user = new User();

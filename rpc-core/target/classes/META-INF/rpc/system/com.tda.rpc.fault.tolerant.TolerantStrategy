@@ -1,0 +1,4 @@
+failBack=com.tda.rpc.fault.tolerant.FailBackTolerantStrategy
+failFast=com.tda.rpc.fault.tolerant.FailFastTolerantStrategy
+failOver=com.tda.rpc.fault.tolerant.FailOverTolerantStrategy
+failSafe=com.tda.rpc.fault.tolerant.FailSafeTolerantStrategy

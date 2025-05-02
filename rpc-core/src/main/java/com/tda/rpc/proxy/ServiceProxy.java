@@ -13,8 +13,8 @@ import com.tda.rpc.model.RpcResponse;
 import com.tda.rpc.model.ServiceMetaInfo;
 import com.tda.rpc.registry.Registry;
 import com.tda.rpc.registry.RegistryFactory;
-import com.tda.rpc.serializer.JdkSerializer;
 import com.tda.rpc.serializer.Serializer;
+import com.tda.rpc.serializer.SerializerFactory;
 
 import java.io.IOException;
 import java.lang.reflect.InvocationHandler;
@@ -37,7 +37,11 @@ public class ServiceProxy implements InvocationHandler {
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
         // 指定序列化器
-        Serializer serializer = new JdkSerializer();
+//        Serializer serializer = new JdkSerializer();
+
+        // 指定序列化器
+        // todo Unexpected character
+        final Serializer serializer = SerializerFactory.getInstance(RpcApplication.getRpcConfig().getSerializer());
 
         // 构造请求
         String serviceName = method.getDeclaringClass().getName();

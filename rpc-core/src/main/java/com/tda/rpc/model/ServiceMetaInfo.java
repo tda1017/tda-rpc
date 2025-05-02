@@ -40,6 +40,11 @@ public class ServiceMetaInfo {
     private String serviceGroup = "default";
 
     /**
+     * 服务活跃数
+     */
+    private int activeCounts = 0;
+
+    /**
      * 获取服务键名
      *
      * @return
@@ -70,4 +75,6 @@ public class ServiceMetaInfo {
         }
         return String.format("%s:%s", serviceHost, servicePort);
     }
+
+
 }

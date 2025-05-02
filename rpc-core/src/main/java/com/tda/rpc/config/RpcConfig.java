@@ -3,6 +3,7 @@ package com.tda.rpc.config;
 import com.tda.rpc.fault.retry.RetryStrategyKeys;
 import com.tda.rpc.fault.tolerant.TolerantStrategyKeys;
 import com.tda.rpc.loadbalancer.LoadBalancerKeys;
+import com.tda.rpc.serializer.SerializerKeys;
 import lombok.Data;
 
 /**
@@ -19,7 +20,7 @@ public class RpcConfig {
     /**
      * 版本号
      */
-    private String version = "1.4";
+    private String version = "1.8";
 
     /**
      * 服务器主机名
@@ -52,8 +53,13 @@ public class RpcConfig {
     private String retryStrategy = RetryStrategyKeys.NO;
 
     /**
-     * 容错策略
+     * 序列化器
      */
-    //todo 为什么需要public static 上面的不用
+    private String serializer = SerializerKeys.JDK;
+    
+    /**
+     * 容错策略
+     * todo 为什么需要public static 上面的不用
+     */
     private String tolerantStrategy = TolerantStrategyKeys.FAIL_FAST;
 }

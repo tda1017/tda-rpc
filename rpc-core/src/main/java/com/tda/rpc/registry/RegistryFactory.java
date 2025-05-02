@@ -8,6 +8,7 @@ import com.tda.rpc.spi.SpiLoader;
  * @description: 注册中心工厂（用于获取注册中心对象）
  */
 public class RegistryFactory {
+
     static {
         SpiLoader.load(Registry.class);
     }
